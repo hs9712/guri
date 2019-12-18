@@ -1,0 +1,412 @@
+@charset "utf-8";
+/*container*/
+.container{
+    
+}
+/*loding*/
+loading{
+    width:100%;
+    height:100%;
+    position:fixed;
+    left:0px;
+    top:0px;
+    background:#fff;
+    z-index:1000; /* 이 값으로 레이어의 위치를 조정합니다. */
+}
+
+/*main*/
+.main{
+    position: relative;
+}
+
+.mainText{
+    font-family: 'Tomorrow', sans-serif;
+    text-align: center;
+    padding: 450px 0;
+    color: #fff;
+}
+.mainText div{
+    display: inline-block;
+    font-size: 25px;
+}
+.mainText .name{
+    width: 170px;
+}
+.mainText .mainBar{
+    width: 210px;
+    height: 2px;
+    background: #fff;
+    margin: 0 20px;
+}
+.star div{
+    position: absolute;
+}
+@keyframes star{
+    0% {opacity:0;}
+    100% {opacity:1;}
+
+    }
+.star1{
+    right: 100px;
+    top: 650px;
+    animation: star 1s infinite linear alternate;
+}
+
+.star2{
+    right: 800px;
+    top: 300px;
+    animation: star 0.5s infinite linear alternate;
+}
+
+.star3{
+    top: 400px;
+    left: 300px;
+    animation: star 0.5s infinite linear alternate;
+}
+.star4{
+    top: 400px;
+    right: 700px;
+    animation: star 0.7s infinite linear alternate;
+}
+.star5{
+    top: 250px;
+    right: 150px;
+    animation: star 0.5s infinite linear alternate;    
+}
+.star6{
+    left: 500px;
+    top: 400px;
+    animation: star 0.7s infinite linear alternate;
+}
+.star7{
+    left: 600px;
+    top: 500px;
+    animation: star 0.7s infinite linear alternate;
+}
+
+.scroll-up{display: none;}
+.down{
+    position: absolute;
+    right: 50%;
+    margin-right: -25px;
+    top: 87%;
+    font-family: 'Noto Sans', sans-serif;
+    font-size: 13px;
+    font-weight: 600;
+    text-align: center;
+    animation: down 1s infinite linear alternate;
+}
+
+@keyframes down{
+    0%{
+        top: 87%;
+    }
+    
+    100%{
+        top: 90%;
+    }
+    
+}
+
+.down img{
+    display: block;
+    padding-bottom: 10px;
+}
+
+/*about*/
+.tit{
+    text-align: center;
+    font-weight: 400;
+    padding: 20px 0;
+}
+.titBar{
+    width: 2px;
+    height: 160px;
+    background: #fff;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    margin-top: 50px;
+}
+.intro{
+    padding-bottom: 150px;
+}
+.about{
+    padding: 100px 0;
+}
+
+.pic{
+    width: 600px;
+    height: 158px;
+    padding-right: 20px;
+    box-sizing: border-box;
+    float: left;
+    text-align: right;
+}
+.pic img{
+    width: 200px;
+}
+.info{
+    width: 600px;
+    padding-left: 20px;
+    box-sizing: border-box;
+    float: right;
+}
+.info p{
+    text-align: left;
+    padding-bottom: 20px;
+    font-size: 22px;
+}
+.infoName{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-weight: 500;
+}
+/*graph Wrap*/
+.graphWrap{}
+.graphBox{
+    width: 500px;
+    float: left;
+    margin-bottom: 100px;
+    }
+.graphBox:nth-child(2n-1){
+    margin-right: 200px;
+}
+.graphBox img{
+    float: left;
+}
+.graphBox .ghR{
+    float: right;
+    margin-top: 10px;
+}
+
+ .zt-skill-bar {
+        width: 300px;
+        color: #fff;
+        font-size: 11px;
+        line-height: 40px;
+        height: 40px;
+        margin-bottom: 5px;
+        
+
+        background-color: rgba(255,255,255,1);
+
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+            -ms-border-radius: 5px;
+                border-radius: 5px;
+
+    }
+
+    .zt-skill-bar * {
+        webkit-transition: all 0.5s ease;
+          -moz-transition: all 0.5s ease;
+           -ms-transition: all 0.5s ease;
+            -o-transition: all 0.5s ease;
+               transition: all 0.5s ease;
+    }
+
+    .zt-skill-bar div {
+        background-color: #c12906;
+        position: relative;
+        padding-left: 25px;
+        width: 0;
+
+        -webkit-border-radius: 5px;
+           -moz-border-radius: 5px;
+           -ms- border-radius: 5px;
+                border-radius: 5px;
+    }
+    .graphBox .blue{
+    background-color: #068fbd;
+    }
+    .graphBox .purple{
+    background-color: #af00fa;
+    }
+    .graphBox .navy{
+    background-color: #2243c0;
+    }
+    .graphBox .orange{
+    background-color: #d87825;
+    }
+
+    .zt-skill-bar span {
+        display: block;
+        position: absolute;
+        right: 0;
+        top: 0;
+        height: 100%;
+        padding: 0 5px 0 10px;
+        background-color: #1a1a1a;
+
+        -webkit-border-radius: 0 2px 2px 0;
+           -moz-border-radius: 0 2px 2px 0;
+            -ms-border-radius: 0 2px 2px 0;
+                border-radius: 0 2px 2px 0;
+    }
+
+    .zt-skill-bar span:before {
+        content: "";
+        position: absolute;
+        width: 6px;
+        height: 6px;
+        top: 50%;
+        left: -3px;
+        margin-top: -3px;
+        background-color: #1a1a1a;
+
+        -webkit-transform: rotate(45deg);
+           -moz-transform: rotate(45deg);
+            -ms-transform: rotate(45deg);
+                transform: rotate(45deg);
+    }
+/*work*/
+.work{
+    padding: 100px 0;
+}
+.workBox{}
+.workBox div{
+    width: 566px;
+    height: 319px;
+    margin-right: 66px;
+    float: left;
+    overflow: hidden;
+    position: relative;
+}
+.workBox div:hover img{
+    transform: scale(1.2);
+}
+
+.workBox div:nth-child(2n){
+    margin-right: 0;
+    margin-top: 66px;
+}
+.workBox .bmca a:after{
+    content: "부산현대미술관 메인페이지 리뉴얼";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .esta a:after{
+    content: "이스타젯 메인페이지 리뉴얼";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .subway a:after{
+    content: "서브웨이 모바일페이지 리뉴얼";
+    text-align: center;
+    line-height: 424px;
+}
+.workBox .wedding a:after{
+    content: "로브드케이 메인페이지 리뉴얼";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .hansol a:after{
+    content: "한솔홈데코 퍼블리싱 연습";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .hollys a:after{
+    content: "할리스커피 퍼블리싱 연습";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .udam a:after{
+    content: "우담라이팅 서브페이지 퍼블리싱 연습";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .samsung a:after{
+    content: "삼성디스플레이 퍼블리싱 연습";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .bene a:after{
+    content: "카페베네 퍼블리싱 연습";
+    text-align: center;
+    line-height: 319px;
+}
+.workBox .subway{
+    width: 566px;
+    height: 424px;
+}
+.workBox div img{
+    width: 100%;
+    transition: all 1s;
+}
+.workBox div a{}
+
+.workBox div a:after{
+    content: "";
+    display: block;
+    width: 566px;
+    height: 319px;
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    right: 0;
+    transition: all 1s;
+    color: rgba(0,0,0,0);
+}
+.workBox .subway a:after{
+    height: 424px;
+}
+.workBox div a:hover:after{
+    background: rgba(0,0,0,0.7);
+    color: #fff;
+}
+/*contact*/
+.contact{
+    padding: 100px 0;
+}
+.contactBox{
+    width: 750px;
+    height: 650px;
+    border-radius: 20px;
+    margin: 0 auto;
+    background: rgba(255,255,255,0.1);
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.contactBox form{
+    padding: 50px 73px 30px;
+}
+.name{
+    width:250px;
+    height:35px;
+    margin-bottom:20px;
+}
+.call{
+    width:250px;
+    height:35px;
+    margin-bottom:20px;
+}
+.message{
+    width: 600px;
+    height: 300px;
+    
+}
+p{
+    text-align: center
+}
+
+button{
+    width: 70px;
+    height: 30px;
+    background: #fff;
+    color: #000;
+    border-radius: 5px;
+    margin-top:35px;
+    margin-left: 265px;
+}
+
+
+select{
+    -webkit-appearance:none;
+    appearance:none;
+    border: 1px solid #333;
+    background: url(../../arrow.png) no-repeat 95% center;
+    
+}
+
+select::-ms-expand{
+    display: none;
+}
+

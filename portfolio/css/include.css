@@ -1,0 +1,43 @@
+@charset "utf-8";
+/*header*/
+#header{
+    width: 100%;
+    position: fixed;
+    z-index: 11;
+    top: 0;
+    left: 0;
+    text-align: right;
+}
+
+.gnb{
+    display: inline-block;
+    
+}
+.gnb li{
+    float: left;
+    padding:30px 45px 5px;
+    font-weight: 200;
+}
+
+
+.gnb li:after{
+    content: "";
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #f0d202;
+    transition: width 0.7s;
+}
+
+.gnb li:hover:after{
+    width:120%
+}
+
+/*footer*/
+#footer{
+    padding: 50px 0;
+}
+#footer p{
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 15px;
+}
