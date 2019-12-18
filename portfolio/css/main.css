@@ -17,6 +17,7 @@ loading{
 /*main*/
 .main{
     position: relative;
+    overflow: hidden;
 }
 
 .mainText{
