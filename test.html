@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      .container {
+        width: 500px;
+        height: 500px;
+        text-align: center;
+      }
+      #img,#img2 {
+        width: 100%;
+        height: 100%;
+      }
+    </style>
+  </head>
+<body>
+  <div class="container">
+    <img id="img" src="//visualshock.negagea.kr/visualshock_top_main.jpg" />
+    <button onclick="toggleImg()">골드</button>
+    <button onclick="toggleImg2()">로즈골드</button>
+    <img id="img2" src="//visualshock.negagea.kr/visualshock_top_main.jpg" />
+    <button onclick="toggleImg3()">색1</button>
+    <button onclick="toggleImg4()">색2</button>  
+    <button onclick="toggleImg5()">색3</button>  
+    <button onclick="toggleImg6()">색4</button>  
+    <button onclick="toggleImg7()">색5</button>  
+  </div>
+  <script>
+    function toggleImg() {
+      document.getElementById("img").src = "http://visualshock.negagea.kr/test/whitegold.jpg";
+    }
+    function toggleImg2() {
+      document.getElementById("img").src = "http://visualshock.negagea.kr/test/blackrosegold.jpg";
+    }  
+    function toggleImg3() {
+      document.getElementById("img2").src = "//visualshock.kr/web/upload/category/shop1_1153_top_733606.jpg";
+    }
+    function toggleImg4() {
+      document.getElementById("img2").src = "//visualshock.kr/web/upload/NNEditor/20201121/84eb8f7581f3c71b2c86756833eb043f.jpg";
+    }  
+    function toggleImg5() {
+      document.getElementById("img2").src = "//visualshock.kr/web/upload/NNEditor/20201123/0c5144a5dea8bc7cf7fd0585d33956d7.jpg";
+    }  
+    function toggleImg6() {
+      document.getElementById("img2").src = "//visualshock.kr/web/upload/NNEditor/20201121/2fe1529e8b119d5252f8ae4fe603c54a.jpg";
+    }  
+    function toggleImg7() {
+      document.getElementById("img2").src = "///visualshock.negagea.kr/it_ds_top_banner.jpg";
+    }    
+  </script>
+  
+</body>
+</html>
